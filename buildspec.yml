@@ -3,7 +3,8 @@ phases:
   install:
     runtime-versions:
       python: 3.8
- 	commands:
+  build:
+  commands:
       - echo "Zipping deployment package..."
       - cd lib
       - zip -r9 ../deployment_package.zip .
