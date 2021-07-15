@@ -3,6 +3,9 @@ phases:
   install:
     runtime-versions:
       python: 3.8
+  commands:
+      - echo "Installing dependencies..."
+      - pip install -r
   build:
   commands:
       - echo "Zipping deployment package..."
