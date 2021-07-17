@@ -9,6 +9,7 @@ phases:
          - echo "Installing dependencies..."
          #- chmod 777 requirements.sh
          #- ./requirements.sh
+         - pip install awscli
          - cd /usr/lib
          - zip -r9 lambda.zip lambda_function.py
          - echo "Updating lambda Function..."
