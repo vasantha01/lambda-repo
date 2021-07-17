@@ -7,7 +7,7 @@ phases:
         commands:
          - echo "Installing dependencies..."
          - ./requirements.sh
-         - chmod  777 requirements.sh
+         - chmod  +x requirements.sh
          - cd /usr/lib
          - zip -r9 lambda.zip lambda_function.py
          - echo "Updating lambda Function..."
