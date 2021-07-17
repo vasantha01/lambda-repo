@@ -2,9 +2,9 @@ version: 0.2
 phases:
     install:
       runtime-versions:
-      python: 3.8
+        python: 3.8
     build:
-      commands:
+        commands:
          - echo "Installing dependencies..."
          - ./requirements.sh
          - cd /usr/lib
