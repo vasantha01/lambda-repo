@@ -3,13 +3,14 @@ phases:
     install:
       runtime-versions:
         python: 3.8
-         - pip install awscli
+    pre_build:
+        commands:
+         - pip install --upgrade awscli
     build:
         commands:
          - echo "Installing dependencies..."
          #- chmod 777 requirements.sh
          #- ./requirements.sh
-         
          - cd /usr/lib
          - zip -r9 lambda.zip lambda_function.py
          - echo "Updating lambda Function..."
