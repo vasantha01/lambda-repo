@@ -1,14 +1,14 @@
 version: 0.2
 phases:
     install:
-       runtime-versions:
-       python: 3.8
+      runtime-versions:
+      python: 3.8
     build:
-        commands:
-          - echo "Installing dependencies..."
-          - ./requirements.sh
-          - cd /usr/lib
-          - zip -r9 lambda.zip lambda_function.py
-          - echo "Updating lambda Function..."
-          - aws lambda update-function-code  --function-name  test1 --zip-file fileb://lambda.zip --region us-east-1
-          - echo "DONE!!"
+      commands:
+         - echo "Installing dependencies..."
+         - ./requirements.sh
+         - cd /usr/lib
+         - zip -r9 lambda.zip lambda_function.py
+         - echo "Updating lambda Function..."
+         - aws lambda update-function-code  --function-name  test1 --zip-file fileb://lambda.zip --region us-east-1
+         - echo "DONE!!"
