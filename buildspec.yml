@@ -3,16 +3,13 @@ phases:
     install:
       runtime-versions:
         python: 3.8
+         - pip install awscli
     build:
         commands:
          - echo "Installing dependencies..."
          #- chmod 777 requirements.sh
          #- ./requirements.sh
-         - sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-         - sudo unzip awscliv2.zip
-         - sudo ./aws/install
-         - sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
-         - sudo aws --version
+         
          - cd /usr/lib
          - zip -r9 lambda.zip lambda_function.py
          - echo "Updating lambda Function..."
