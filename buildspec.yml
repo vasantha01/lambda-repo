@@ -1,13 +1,11 @@
 version: 0.2
 phases:
-  install:
-    commands:
-      runtime-versions:
-      python: 3.8
+    install:
+        commands:
       - echo "Installing dependencies..."
       - ./requirements.sh
-  build:
-  commands:
+     build:
+        commands:
       - cd /usr/lib
       - zip -r9 lambda.zip lambda_function.py
       - echo "Updating lambda Function..."
