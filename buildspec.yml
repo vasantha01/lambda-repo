@@ -11,7 +11,7 @@ phases:
          - echo "Installing dependencies..."
          #- chmod 777 requirements.sh
          #- ./requirements.sh
-         - cd /usr/lib
+         - ls -ltr
          - zip -r9 lambda.zip lambda_function.py
          - echo "Updating lambda Function..."
          - aws lambda update-function-code  --function-name  test22 --zip-file fileb://lambda.zip --region us-east-1
