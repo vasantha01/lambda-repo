@@ -16,3 +16,6 @@ phases:
          - echo "Updating lambda Function..."
          - aws lambda update-function-code  --function-name  test22 --zip-file fileb://lambda.zip --region us-east-1
          - echo "DONE!!"
+   artifacts:
+        files:
+            -'**/*'
