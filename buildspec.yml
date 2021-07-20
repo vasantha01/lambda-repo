@@ -18,5 +18,5 @@ phases:
          - echo "DONE!!"
     artifacts:
         files:
-            -'**/*'
-        name:lambda-artifacts-poc
+          - '**/*'
+        name:builds/$CODEBUILD_BUILD_NUMBER/lambda-artifacts-poc
