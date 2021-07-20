@@ -19,4 +19,4 @@ phases:
     artifacts:
         files:
           - '**/*'
-        name:builds/$CODEBUILD_BUILD_NUMBER/lambda-artifacts-poc
+        name: builds/$CODEBUILD_BUILD_NUMBER/lambda-artifacts-poc
