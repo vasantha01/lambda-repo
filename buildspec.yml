@@ -20,3 +20,5 @@ phases:
         files:
           - '**/*'
         #name: lambda-artifacts-poc
+        base-directory: 'my-build*'
+        discard-paths: yes
