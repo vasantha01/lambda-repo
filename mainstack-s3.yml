@@ -10,6 +10,6 @@ AWSTemplateFormatVersion: 2010-09-09
 	    StackRef:
 	    Value: !Ref NestedCall
      OutputFromNestedStack:
-	  Value: !GetAtt NestedCall.Output.BucketName
+	   Value: !GetAtt NestedCall.Output.BucketName
             
         
