@@ -10,6 +10,6 @@
 	    StackRef:
 		Value:!Ref NestedCall
 	OutputFromNestedStack:
-	Value: !GetAtt NestedCall.Output.BucketName
+	  Value: !GetAtt NestedCall.Output.BucketName
             
         
