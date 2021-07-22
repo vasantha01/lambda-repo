@@ -1,6 +1,6 @@
   AWSTemplateFormatVersion: 2010-09-09
     Description: S3-BucketCreation
-    Parameters: 
+    Resources: 
         NestedCall: 
             Type: AWS::CloudFormation::Stack
 	     Properties:
