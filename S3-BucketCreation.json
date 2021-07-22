@@ -4,7 +4,7 @@
     "Parameters": {
         "RawBucket": {
             "Type": "String",
-            "Default": "poc-bucket1-raw1111",
+            "Default": "poc-bucket1-raw0000",
             "Description": "Enter Prism Bucket Name"
         }	
     },
