@@ -5,7 +5,7 @@ Parameters:
   VPCId:
     Description: VPC to create the security group into
     Type: AWS::EC2::VPC::Id
-    Default:vpc-8b3fe0f6
+    Default: vpc-8b3fe0f6
     
 Resources:
   SSHSecurityGroup:
