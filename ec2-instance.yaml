@@ -2,6 +2,7 @@ Parameters:
   VPCId:
     Description: VPC to create the security group and EC2 instance into
     Type: AWS::EC2::VPC::Id
+    Default: vpc-8b3fe0f6
 
 Mappings:
   AWSRegionArch2AMI:
