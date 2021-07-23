@@ -1,0 +1,48 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Description": "SNS Email Failure Notifications of Lambda,StepFunction,Glue Jobs,EC2 and Redshift",
+	"Parameters": {
+		"SnsDisplayName": {
+			"Type": "String",
+			"Default": "Failure Notification of SNS",
+			"Description": "Enter sns display name"
+		},
+		"SnsTopicNameEC2": {
+			"Type": "String",
+			"Default": "sns-core-prsm-dev-ec2-alarm-01",
+			"Description": "Enter sns topic name "
+		},
+
+		"SnsSubscriber1": {
+			"Type": "String",
+			"Default": "kp01vasantharani@gmail.com",
+			"Description": "Enter email address to be notified"
+		},
+
+		"SnsProtocol": {
+			"Type": "String",
+			"Default": "Email",
+			"Description": "Enter Protocol of sns topic"
+		}
+	},
+	"Resources": {
+
+		"SNSEC2": {
+			"Type": "AWS::SNS::Topic",
+			"Properties": {
+				"DisplayName": {
+					"Ref": "SnsDisplayName"
+				},
+				"Subscription": [{
+					"Endpoint": {
+						"Ref": "SnsSubscriber1"
+					},
+					"Protocol": {
+						"Ref": "SnsProtocol"
+					}
+
+				}]
+			}
+		}
+	}
+}
