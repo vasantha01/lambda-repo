@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: "This example template shows how to create an Amazon SQS queue with CloudWatch alarms on queue depth. This template creates an Amazon SQS queue and one or more CloudWatch alarms. You will be billed for the AWS resources used if you create a stack using this template."
 Parameters:
   AlarmEmail:
-    Default: "jane.doe@example.com"
+    Default: "kp01vasantharani@gmail.com"
     Description: "Email address to notify of operational issues"
     Type: "String"
 Resources:
