@@ -13,7 +13,7 @@ Resources:
   SSHSecurityGroupStack:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: https://code-deploy-poc.s3.us-east-2.amazonaws.com/11-nested-stacks/nested/ssh-security-group.yaml
+      TemplateURL: https://github.com/vasantha01/lambda-repo/blob/cp/ssh-security-group.yaml
       Parameters:
         ApplicationName: !Ref AWS::StackName
         VPCId: !Ref VPCId
