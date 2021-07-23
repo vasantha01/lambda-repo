@@ -4,12 +4,12 @@
     "Parameters": {
         "RawBucket": {
             "Type": "String",
-            "Default": "poc-bucket1-raw",
+            "Default": "poc-bucket22-raw",
             "Description": "Enter Prism Bucket Name"
         },
 	"PrasedBucket": {
             "Type": "String",
-            "Default": "poc-bucket1-parsed",
+            "Default": "poc-bucket33-parsed",
             "Description": "Enter Prism Bucket Name"
         }	
     },
