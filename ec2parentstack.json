@@ -4,7 +4,7 @@
         "myStackWithParams": {
             "Type": "AWS::CloudFormation::Stack",
             "Properties": {
-                "TemplateURL": "https://s3bucket-poc1.s3.amazonaws.com/ec2-child.json"
+                "TemplateURL": "https://s3bucket-poc1.s3.amazonaws.com/ec2-child.json
             }
         }
     }
