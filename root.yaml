@@ -4,19 +4,19 @@ Resources:
   nestedSkeletonStack:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: https://s3.amazonaws.com/cloudformation-1548978758/nested-skeleton.yaml
+      TemplateURL: https://s3bucket-poc1.s3.amazonaws.com/nested-skeleton.yaml
 
   nestedApp1Stack:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: https://s3.amazonaws.com/cloudformation-1548978758/nested-app1.yaml
+      TemplateURL: https://s3bucket-poc1.s3.amazonaws.com/nested-app1.yaml
       Parameters:
           resourceName: !Ref resourceName1
 
   nestedApp2Stack:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: https://s3.amazonaws.com/cloudformation-1548978758/nested-app2.yaml
+      TemplateURL: https://s3bucket-poc1.s3.amazonaws.com/nested-app2.yaml
       Parameters:
           resourceName: !Ref resourceName2
 
