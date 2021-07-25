@@ -12,7 +12,7 @@
     "Outputs": {
        "StackRef": {"Value": { "Ref" : "myStack"}},
        "OutputFromNestedStack" : {
-             "Value" : { "Fn::GetAtt" : [ "myStack", "Outputs.BucketName" ] }
+             "Value" : { "Fn::GetAtt" : [ "myStack", "Outputs.bucketgudi" ] }
        }
     }
 }
