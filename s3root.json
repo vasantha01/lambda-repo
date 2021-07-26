@@ -5,11 +5,9 @@
 	       "Type" : "AWS::CloudFormation::Stack",
 	       "Properties" : {
 	        "TemplateURL" : "https://s3bucket-poc1.s3.amazonaws.com/s3-childnew1.json",
-              "TimeoutInMinutes" : "60"
-	       }
-        }
-    },
-  "OutputFromNestedStack" : {
-             "Value" : { "Fn::GetAtt" : [ "myStack", "Outputs.BucketName" ] }
-       }
+              "TimeoutInMinutes" : "60",
+		       "Fn::GetAtt" : [ "myStack", "Outputs.BucketName" ] }
+           }
+    }
 }
+  
