@@ -9,10 +9,7 @@
 	       }
         }
     },
-    "Outputs": {
-       "StackRef": {"Value": { "Ref" : "myStack"}},
-       "OutputFromNestedStack" : {
+  "OutputFromNestedStack" : {
              "Value" : { "Fn::GetAtt" : [ "myStack", "Outputs.BucketName" ] }
        }
-    }
 }
