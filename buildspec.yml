@@ -3,9 +3,9 @@ phases:
     install:
       runtime-versions:
         python: 3.8
-    pre_build:
-        commands:
-         - pip install --upgrade awscli
+    #pre_build:
+      #  commands:
+       #  - pip install --upgrade awscli
     build:
         commands:
          - echo "Installing dependencies..."
