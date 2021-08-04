@@ -4,14 +4,14 @@
       "nestedS3" : {
       "Type" : "AWS::CloudFormation::Stack",
       "Properties" : {
-          "TemplateURL" : "https://testmalli.s3.amazonaws.com/nestedS3.json"
+          "TemplateURL" : "https://s3bucket-poc1.s3.amazonaws.com/nesteds3.json"
         }
      },
       "NestedSNS" : {
       "Type" : "AWS::CloudFormation::Stack",
       "Properties" : {
-          "TemplateURL" : "https://testmalli.s3.amazonaws.com/NestedSNS.json"
+          "TemplateURL" : "https://s3bucket-poc1.s3.amazonaws.com/nestedsns.json"
         }
       }
     }
-}	
+}
