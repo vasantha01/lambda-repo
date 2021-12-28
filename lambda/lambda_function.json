@@ -1,0 +1,16 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "lambda fucntion creation",
+    "Resources": {
+        "Lambda": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+                "Handler": "lambda_fucnion.index.handler",
+                "Code": {
+                    "ZipFile": "lambda.zip"
+                },
+                "Runtime": "python3.8"
+            }
+        }
+    }
+}
