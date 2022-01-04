@@ -12,9 +12,9 @@ phases:
          #- chmod 777 requirements.sh
          #- bash requirements.sh
          - ls -ltr
-        # - zip  lambda/lambda_function.zip lambda/lambda_function.py
+         - zip  lambda/lambda_function.zip lambda/lambda_function.py
          - echo "copy lambda Function..."
-       #  - aws lambda update-function-code  --function-name  lambda_function --zip-file fileb://lambda.zip --region us-east-1
+      #   - aws lambda update-function-code  --function-name  lambda_function --zip-file fileb://lambda.zip --region us-east-1
          - aws s3 cp  --recursive lambda s3://lambda-layer-tst/
          - echo "DONE!!"
    
