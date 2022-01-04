@@ -15,6 +15,6 @@ phases:
          - zip -r9 lambda.zip lambda
          - echo "copy lambda Function..."
        #  - aws lambda update-function-code  --function-name  lambda_function --zip-file fileb://lambda.zip --region us-east-1
-         - aws s3 cp  --recursive lambda s3://lambda-layer-tst/
+         - aws s3 cp  --recursive lambda.zip s3://lambda-layer-tst/
          - echo "DONE!!"
    
