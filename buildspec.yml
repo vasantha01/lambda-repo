@@ -1,19 +1,18 @@
-version: 0.2
-phases:
-    install:
-      runtime-versions:
-        python: 3.8
-    #pre_build:
-      #  commands:
-       #  - pip install --upgrade awscli
-    build:
-        commands:
-        - echo "Installing dependencies..."
-         #- chmod 777 requirements.sh
-         #- bash requirements.sh
-         - ls -ltr
-       # - zip -r lambda/lambda.zip lambda/lambda_function.py
-      # - aws lambda update-function-code  --function-name  lambda_function --zip-file fileb://lambda.zip --region us-east-1
-       - aws s3 cp  --recursive lambda s3://lambda-layer-tst/
-       - echo "DONE!!"
+          version: 0.2
+          phases:
+            install:
+              runtime-versions:
+                docker: 18
+            pre_build:
+              commands:
+                - echo Retrieving information from artifacts...
+            build:
+              commands:
+                - echo Building the parameters file...
+            post_build:
+              commands:
+                - echo Copying application, database and cloudFormation templates to S3
+                - zip lambda/lambda.zip lambda
+                - aws s3 cp --recursive lambda s3://lambda-layer-tst/
+
    
