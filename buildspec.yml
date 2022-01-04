@@ -8,7 +8,7 @@ phases:
        #  - pip install --upgrade awscli
     build:
         commands:
-         - echo "Installing dependencies..."
+        - echo "Installing dependencies..."
          #- chmod 777 requirements.sh
          #- bash requirements.sh
          - ls -ltr
