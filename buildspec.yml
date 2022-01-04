@@ -12,7 +12,7 @@
             post_build:
               commands:
                 - echo source code to s3
-                - zip -r lambda.zip lambda
+                - zip -r lambda/lambda-sub/lambda.zip lambda/lambda-sub
                 - aws s3 cp --recursive lambda.zip s3://lambda-layer-tst/
 
    
