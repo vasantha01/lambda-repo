@@ -14,8 +14,8 @@ def lambda_handler(event, context):
     print(conn)
     cur = conn.cursor()
     print("redshift connected successfully")
-    bucket_name = "analytics-v1-application-eu-central-1-195644677231"
-    folder_name = "aims-bi-app/sql/wipo_emr_ddl_scripts.sql"
+    bucket_name = "lambda-poc-test1"
+    folder_name = "lambda-poc-test1/aims-bi-app/sql/wipo_emr_ddl_scripts.sql"
     data = s3.get_object(Bucket=bucket_name, Key=(folder_name))
     #data = s3.get_object(Bucket='analytics-v1-application-eu-central-1-195644677231/aims-bi-app/sql/', Key='wipo_emr_ddl_scripts.sql')
     print(type(data))
@@ -25,4 +25,5 @@ def lambda_handler(event, context):
     cur.execute("commit")
     cur.close()
     conn.close()
+
 
