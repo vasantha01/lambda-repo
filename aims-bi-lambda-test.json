@@ -1,0 +1,22 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "lambda function for creation of tables in Redshift",
+    "Resources": {
+        "Lambdafucntiontest": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+                "Handler": "index.handler",
+                "Role": "arn:aws:iam::798178097362:role/service-role/mylambda-role-2hrg8c82",
+                "Code": {
+                    "S3Bucket": "lambdabucketwipo",
+                    "S3Key": "lambda/lambda.zip"
+                },
+                "Runtime": "python3.7",
+                "Timeout": 25,
+                "TracingConfig": {
+                    "Mode": "Active"
+                }
+            }
+        }
+    }
+}
