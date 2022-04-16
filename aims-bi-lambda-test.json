@@ -8,7 +8,7 @@
                 "Handler": "index.handler",
                 "Role": "arn:aws:iam::798178097362:role/service-role/mylambda-role-2hrg8c82",
                 "Code": {
-                    "S3Bucket": "lambdabucketwipo",
+                    "S3Bucket": "ranibucket2",
                     "S3Key": "lambda/lambda.zip"
                 },
                 "Runtime": "python3.7",
