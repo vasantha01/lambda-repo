@@ -13,6 +13,6 @@
               commands:
                 - echo source code to s3
                 - zip lambda/sub/lambda.zip lambda
-                - aws s3 cp --recursive lambda s3://lambda-poc-test1/lambda.zip
+                - aws s3 cp --recursive lambda s3://ranibucket2/lambda.zip
 
    
